@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">푸드타이머</string>
+    <string name="minsecond">분   :   초</string>
+    <string name="title">일반</string>
+    <string name="btn_set">설정</string>
+    <string name="btn_start">시작</string>
+    <string name="btn_con">계속</string>
+    <string name="btn_pause">일시정지</string>
+    <string name="btn_reset">다시 시작</string>
+    <string name="plus30s">+30초</string>
+    <string name="minus30s">-30초</string>
+
+    <string name="detail2">시간이 맞지 않으면 편집해주세요</string>
+
+
+    <!--selection-->
+
+    <string name="noodles">국수</string>
+    <string name="vege">야채</string>
+    <string name="egg">달걀</string>
+
+    <string name="beansprouts">콩나물</string>
+    <string name="mungbeansprouts">숙주</string>
+    <string name="spinach">시금치</string>
+
+
+    <string name="ramen">라면</string>
+    <string name="spaghetti">스파게티면</string>
+    <string name="udon">우동(반조리X)</string>
+    <string name="plainnoo">소면</string>
+    <string name="glassnoo">당면</string>
+    <string name="noodlesoup">칼국수면</string>
+
+    <string name="hardboiled">완숙달걀</string>
+    <string name="softboiled">반숙달걀</string>
+
+    <!--Alarm-->
+    <string name="alarmmode">알람모드 설정</string>
+    <string name="sound">소리</string>
+    <string name="vibration">진동</string>
+    <string name="soundandvib">소리 + 진동</string>
+    <string name="alarmvolumeset">알람 볼륨\n(동그라미를 움직여주세요)</string>
+    <string name="alarmvolume">알람 볼륨 :</string>
+    <string name="save">저장</string>
+    <string name="media">미디어 볼륨이 조절됩니다</string>
+
+    <!--back-->
+    <string name="leave">이 페이지에서 나가고 싶습니까?</string>
+    <string name="yes">예</string>
+    <string name="no">아니오</string>
+
+    <!--press back twice-->
+    <string name="backbtn">뒤로가기를 한번 더 누르시면 종료됩니다</string>
+</resources>

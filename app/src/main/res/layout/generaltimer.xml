@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GeneralTimer"
+    android:background="@color/background">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_title"
+        android:textSize="45dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:text="@string/title"
+        android:layout_below="@+id/total_numberpick"
+        android:layout_marginTop="93dp"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:text="00:00"
+        android:textColor="@android:color/black"
+        android:textSize="100dp"
+        android:layout_below="@+id/text_title"
+        />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/minus30s"
+        android:layout_centerHorizontal="true"
+        android:text="@string/btn_start"
+        android:textColor="@color/black"
+        android:background="@drawable/startpause_button"
+        android:textSize="18dp"/>
+
+
+    <Button
+        android:id="@+id/button_pause"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/minus30s"
+        android:layout_alignLeft="@+id/text_view_countdown"
+        android:text="@string/btn_pause"
+        android:textSize="18dp"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:textColor="@color/black"
+        android:background="@drawable/pause_button"/>
+
+    <Button
+        android:id="@+id/button_continue"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/minus30s"
+        android:layout_alignLeft="@+id/text_view_countdown"
+        android:text="@string/btn_con"
+        android:textSize="18dp"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:textColor="@color/black"
+        android:background="@drawable/continue_button"/>
+
+
+
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/minus30s"
+        android:layout_alignRight="@+id/text_view_countdown"
+        android:text="@string/btn_reset"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:background="@drawable/reset_button"/>
+
+
+    <Button
+        android:id="@+id/plus30s"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="@string/plus30s"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/text_view_countdown"
+        android:layout_alignTop="@+id/text_view_countdown"
+        android:background="@drawable/timecontrol_button"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+        android:id="@+id/minus30s"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:text="@string/minus30s"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/text_view_countdown"
+        android:layout_toRightOf="@+id/text_view_countdown"
+        android:background="@drawable/timecontrol_button"
+        android:layout_marginLeft="10dp"/>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar"
+        android:id="@+id/total_numberpick"
+        android:backgroundTint="@color/background"
+
+        >
+        <TextView
+            android:id="@+id/minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minsecond"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/minute">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/numberpicker"
+                android:layout_centerHorizontal="true">
+
+                <NumberPicker
+                    android:id="@+id/numberPicker1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:theme="@style/numberPickerCustomSize"
+
+                    />
+
+                <NumberPicker
+                    android:id="@+id/numberPicker2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:layout_toRightOf="@+id/colon"
+                    android:theme="@style/numberPickerCustomSize"
+
+                    />
+
+                <TextView
+                    android:id="@+id/colon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="50dp"
+                    android:layout_toRightOf="@+id/numberPicker1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/numberpicker"
+                android:layout_centerVertical="true"
+                android:text="@string/btn_set"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:background="@drawable/set_button"
+                android:textColor="@color/black"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar">
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:text="MENU"
+            android:textSize="20dp"
+            android:background="@color/menu"
+            android:textColor="@color/black"
+            />
+
+        <!--<ImageButton-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_toLeftOf="@+id/button"-->
+            <!--android:id="@+id/home"-->
+            <!--android:src="@drawable/home"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:background="@color/transparent"-->
+            <!--android:layout_centerVertical="true" />-->
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:background="@color/menu"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:id="@+id/setting">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/wheel"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="@color/transparent"
+                android:layout_centerVertical="true"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/home"
+        android:background="@color/menu"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

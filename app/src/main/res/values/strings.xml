@@ -1,0 +1,56 @@
+<resources>
+    <!--generaltimer-->
+    <string name="app_name">FoodTimer</string>
+    <string name="minsecond">min    :    sec</string>
+    <string name="title">General</string>
+    <string name="btn_set">SET</string>
+    <string name="btn_start">start</string>
+    <string name="btn_con">continue</string>
+    <string name="btn_pause">pause</string>
+    <string name="btn_reset">reset</string>
+    <string name="plus30s">+30s</string>
+    <string name="minus30s">-30s</string>
+
+    <string name="detail2">If the suggested time is not suitable, please edit it</string>
+
+
+    <!--selection-->
+
+    <string name="noodles">Noodles</string>
+    <string name="vege">Vegetables</string>
+    <string name="egg">Egg</string>
+    
+    <string name="beansprouts">Bean Sprouts</string>
+    <string name="mungbeansprouts">Mung Bean\nSprouts</string>
+    <string name="spinach">Spinach</string>
+
+    
+    <string name="ramen">Ramen</string>
+    <string name="spaghetti">Spaghetti</string>
+    <string name="udon">Udong</string>
+    <string name="plainnoo">Plain Noodles</string>
+    <string name="glassnoo">Glass Noodles</string>
+    <string name="noodlesoup">Noodle Soup</string>
+
+    <string name="hardboiled">Hard Boiled Egg</string>
+    <string name="softboiled">Soft boiled Egg</string>
+
+
+    <!--Alarm-->
+    <string name="alarmmode">Alarm Mode</string>
+    <string name="sound">sound</string>
+    <string name="vibration">vibration</string>
+    <string name="soundandvib">sound + vibration</string>
+    <string name="alarmvolumeset">Alarm Volume\n(move the circle)</string>
+    <string name="alarmvolume">Alarm Volume :</string>
+    <string name="save">save</string>
+    <string name="media">The media volume is controlled</string>
+
+    <!--back-->
+    <string name="leave">Do you want to leave this page?</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+
+    <!--press back twice-->
+    <string name="backbtn">Press back button again to exit</string>
+</resources>

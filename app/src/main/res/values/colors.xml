@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#808080</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#0000ffff</color>
+    <color name="background">#11FFEB3B</color>
+    <color name="menu">#46FF9800</color>
+    <color name="statusbar">#11FFEB3B</color>
+
+    <color name="startbutton">#BCFC5537</color>
+    <color name="pausebutton">#BCFC5537</color>
+    <color name="continuebutton">#B2FF9800</color>
+    <color name="resetbutton">#C98BC34A</color>
+    <color name="setbutton">#BEE74B16</color>
+</resources>
